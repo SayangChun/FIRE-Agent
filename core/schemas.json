@@ -1,0 +1,43 @@
+{
+  "financial_profile": {
+    "personal": {"age":"int","target_fire_age":"int?","country":"str","currency":"str"},
+    "income": {"monthly_income":"num","annual_income":"num","income_growth_rate":"num"},
+    "expenses": {"monthly_expenses":"num","annual_expenses":"num","retirement_annual_expenses":"num","retirement_expense_ratio":"num"},
+    "assets": {"cash":"num","stocks":"num","etf":"num","bonds":"num","crypto":"num","real_estate":"num","other":"num"},
+    "liabilities": {"mortgage":"num","consumer_debt":"num","other":"num"},
+    "investment": {"monthly_contribution":"num","expected_return":"num","inflation_rate":"num","withdrawal_rate":"num"}
+  },
+  "fire_result": {
+    "summary": {"current_net_worth":"num","years_to_fire":"num","fire_number":"num","readiness_grade":"str","one_liner":"str"},
+    "fire_number": {"fire_number":"num","withdrawal_rate":"num","annual_retirement_expenses":"num"},
+    "progress": {"current_assets":"num","fire_number":"num","progress":"num","remaining":"num"},
+    "savings_rate": {"savings_rate":"num","annual_savings":"num","monthly_savings":"num"},
+    "estimated_fire_age": "int",
+    "scenarios": {
+      "conservative": {"return_rate":"num","inflation_rate":"num","fire_number":"num","fire_age":"int","final_assets":"num"},
+      "base": {"return_rate":"num","inflation_rate":"num","fire_number":"num","fire_age":"int","final_assets":"num"},
+      "optimistic": {"return_rate":"num","inflation_rate":"num","fire_number":"num","fire_age":"int","final_assets":"num"}
+    },
+    "monte_carlo": {"success_probability":"num","median_final_assets":"num","percentiles":{"p10":"num","p25":"num","p50":"num","p75":"num","p90":"num"}},
+    "fire_type": {"type":"str(lean|regular|fat|barista|coast)","reason":"str","confidence":"num"},
+    "readiness_score": {"total_score":"num","grade":"str(A+..F)","dimensions":{"savings_efficiency":"num","investment_growth":"num","timeline_feasibility":"num","risk_resilience":"num","expense_control":"num"}},
+    "risks": [{"name":"str","severity":"str(low|medium|high|critical)","reason":"str","mitigation":"str"}],
+    "tradeoffs": [{"option":"str","impact":"str","cost":"str"}],
+    "recommendations": [{"priority":"int","category":"str","action":"str","expected_impact":"str","effort":"str(low|medium|high)"}]
+  },
+  "report": {
+    "executive_summary": {"current_net_worth":"num","fire_number":"num","years_to_fire":"num","readiness_grade":"str","key_findings":["str"]},
+    "financial_profile": {"age":"int","target_fire_age":"int","annual_income":"num","annual_expenses":"num","net_worth":"num"},
+    "fire_number_analysis": {"fire_number":"num","withdrawal_rate":"num","annual_retirement_expenses":"num"},
+    "current_progress": {"current_assets":"num","fire_number":"num","progress_percentage":"num","remaining_amount":"num"},
+    "savings_rate_analysis": {"current_savings_rate":"num","annual_savings":"num","monthly_savings":"num"},
+    "estimated_fire_age": {"estimated_age":"int","years_remaining":"num","meets_target":"bool"},
+    "scenario_analysis": "see scenarios",
+    "monte_carlo_results": {"success_probability":"num","median_final_assets":"num","simulation_count":"int","percentiles":{"p10":"num","p50":"num","p90":"num"}},
+    "fire_type_classification": {"type":"str","reason":"str","confidence":"num"},
+    "risk_analysis": {"risks":[{"name":"str","severity":"str","reason":"str","mitigation":"str"}],"overall_risk_level":"str"},
+    "recommended_actions": [{"priority":"int","action":"str","expected_impact":"str"}],
+    "assumptions": {"expected_return":"num","inflation_rate":"num","withdrawal_rate":"num"},
+    "disclaimer": "str"
+  }
+}
