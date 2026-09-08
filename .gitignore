@@ -1,5 +1,5 @@
-# Large binary files
-package/*.zip
+# Large binary files (keep FIRE-Agent-Core.zip)
+package/FIRE-Agent-Full.zip
 
 # OS generated files
 .DS_Store
