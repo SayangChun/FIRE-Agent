@@ -1,0 +1,26 @@
+section,field,value,unit,notes
+personal,age,30,years,Current age
+personal,target_fire_age,45,years,Desired retirement age
+personal,country,China,,Country of residence
+personal,currency,CNY,,Primary currency
+income,monthly,20000,CNY,Monthly post-tax income
+income,annual,240000,CNY,Annual post-tax income
+income,growth_rate,0.03,,Annual income growth rate
+expenses,monthly,8000,CNY,Monthly living expenses
+expenses,annual,96000,CNY,Annual living expenses
+expenses,retirement_annual,72000,CNY,Expected annual expenses in retirement
+expenses,retirement_ratio,0.75,,Retirement expenses as ratio of current
+assets,cash,50000,CNY,Cash and bank deposits
+assets,stocks,100000,CNY,Individual stocks
+assets,etf,80000,CNY,Index funds / ETFs
+assets,bonds,30000,CNY,Bonds / fixed income
+assets,crypto,20000,CNY,Cryptocurrency holdings
+assets,real_estate,0,CNY,Real estate equity
+assets,other,10000,CNY,Other investable assets
+liabilities,mortgage,0,CNY,Outstanding mortgage balance
+liabilities,consumer_debt,0,CNY,Credit cards / personal loans
+liabilities,other,0,CNY,Other liabilities
+investment,monthly_contribution,10000,CNY,Monthly amount invested
+investment,expected_return,0.07,,Expected annual investment return
+investment,inflation,0.025,,Assumed annual inflation rate
+investment,withdrawal_rate,0.04,,Safe withdrawal rate
